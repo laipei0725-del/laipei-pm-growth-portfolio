@@ -28,7 +28,7 @@
 
 .profile-img-container {
   width: 100%;
-  height: 440px;
+  height: 460px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -315,11 +315,11 @@
   color: var(--text-muted);
 }
 
-/* 9:16 Video Showcase Grid */
+/* 9:16 Video Showcase Grid (Updated to 4 Columns) */
 .videos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
 }
 
 .video-card {
@@ -343,7 +343,7 @@
 .phone-mockup-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 160%; /* 9:16 aspect ratio */
+  padding-top: 155%; /* 9:16 vertical proportion */
   background-color: #1A1918;
   overflow: hidden;
   cursor: pointer;
@@ -360,7 +360,7 @@
 }
 
 .video-card:hover .phone-mockup-cover {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .play-overlay {
@@ -369,11 +369,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.3) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.15) 55%, rgba(0,0,0,0.4) 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.25rem;
+  padding: 1.15rem;
   transition: opacity var(--transition-fast);
 }
 
@@ -382,8 +382,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 56px;
-  height: 56px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
@@ -398,47 +398,71 @@
 
 .phone-mockup-wrapper:hover .play-btn-circle {
   transform: translate(-50%, -50%) scale(1.15);
-  background-color: var(--accent-terracotta);
-  border-color: var(--accent-terracotta);
+  background-color: #E1306C; /* Instagram Magenta Accent */
+  border-color: #E1306C;
 }
 
 .video-stat-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(8px);
   color: #FFF;
-  font-size: 0.8125rem;
+  font-size: 0.78125rem;
   font-weight: 600;
-  padding: 0.35rem 0.75rem;
+  padding: 0.3rem 0.65rem;
   border-radius: var(--radius-pill);
   align-self: flex-start;
 }
 
+.ig-icon-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #E1306C;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
 .video-card-body {
-  padding: 1.5rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
 .video-card-title {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   color: var(--text-primary);
 }
 
 .video-card-desc {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 1rem;
 }
 
+.btn-ig-reels {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent-terracotta);
+  margin-top: auto;
+  transition: color var(--transition-fast);
+}
+
+.btn-ig-reels:hover {
+  color: #E1306C;
+}
+
 .video-folder-cta {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   text-align: center;
 }
 
@@ -592,12 +616,12 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(20, 19, 18, 0.85);
+  background-color: rgba(20, 19, 18, 0.88);
   backdrop-filter: blur(16px);
   z-index: 2000;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .lightbox-modal.active {
@@ -607,13 +631,13 @@
 .lightbox-content {
   position: relative;
   width: 100%;
-  max-width: 420px;
-  height: 85vh;
+  max-width: 440px;
+  height: 88vh;
   background-color: #000;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 25px 70px rgba(0,0,0,0.5);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 25px 70px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .lightbox-close {
@@ -623,13 +647,21 @@
   background: none;
   border: none;
   color: #FFF;
-  font-size: 2rem;
+  font-size: 2.2rem;
   cursor: pointer;
+  z-index: 2100;
 }
 
 /* Responsiveness for components */
+@media (max-width: 1024px) {
+  .videos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+}
+
 @media (max-width: 992px) {
-  .projects-grid, .videos-grid {
+  .projects-grid {
     grid-template-columns: 1fr;
   }
   .metrics-grid {
@@ -648,6 +680,9 @@
 }
 
 @media (max-width: 576px) {
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
   .methodology-grid {
     grid-template-columns: 1fr;
   }
