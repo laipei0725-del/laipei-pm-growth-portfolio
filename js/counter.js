@@ -15,15 +15,21 @@ document.addEventListener('DOMContentLoaded', () => {
       const numElement = card.querySelector('.metric-number');
       if (!numElement) return;
 
-      const targetValue = parseInt(card.dataset.value, 10);
+      const rawVal = card.dataset.value;
+      if (!rawVal) return;
+
+      const targetValue = parseInt(rawVal, 10);
       const suffix = card.dataset.suffix || '';
       const prefix = card.dataset.prefix || '';
 
-      if (isNaN(targetValue)) return;
+      if (isNaN(targetValue)) {
+        numElement.textContent = rawVal;
+        return;
+      }
 
       let current = 0;
-      const step = Math.max(1, Math.floor(targetValue / 50));
-      const duration = 1500; // ms
+      const step = Math.max(1, Math.floor(targetValue / 45));
+      const duration = 1200; // ms
       const intervalTime = Math.max(16, duration / (targetValue / step));
 
       const timer = setInterval(() => {
@@ -45,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         animateCounters();
       }
     });
-  }, { threshold: 0.3 });
+  }, { threshold: 0.2 });
 
   metricCards.forEach(card => observer.observe(card));
 });
