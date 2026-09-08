@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>賴沛儒 Pei-Ju Lai | 數位產品企劃（Junior PM）× 內容成長黑客</title>
+  <meta name="description" content="賴沛儒的個人作品集網站。3+ 年行銷企劃與內容推進經驗，持 PMA 專案管理證照，結合 User Flow 規劃與 AI 輔助實作，專注打造兼具商業價值與直覺體驗的 Web / App。">
+  
+  <!-- Favicon & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. Site Navigation Bar
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <img src="https://lh3.googleusercontent.com/d/1atyB0uobgx0J9wSv6-rcOuJ-KIxSEC-9=w100" alt="賴沛儒 Pei-Ju Lai" class="brand-avatar-mini" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80'">
+        <div>
+          <span class="brand-name">賴沛儒 Pei-Ju</span>
+          <span class="brand-subtitle">Junior PM × Growth Marketer</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">核心優勢</a>
+        <a href="#projects" class="nav-link">精選產品企劃</a>
+        <a href="#viral-content" class="nav-link">爆款流量專區</a>
+        <a href="#methodology" class="nav-link">產品思維</a>
+        <a href="#contact" class="btn-nav-cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+          預約面試對談
+        </a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- ==========================================================================
+       2. Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left Column: Value Proposition -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge-group">
+            <span class="badge-item highlight">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              PMA 專案管理認證
+            </span>
+            <span class="badge-item">Growth Marketing</span>
+            <span class="badge-item">User Flow & Wireframe</span>
+            <span class="badge-item">AI Prototyping</span>
+          </div>
+
+          <h1 class="hero-title">
+            把市場敏銳度、內容流量與使用者痛點，<br>
+            <span class="highlight-text">轉譯為可落地的數位產品</span>
+          </h1>
+
+          <p class="hero-description" id="about">
+            3+ 年行銷企劃與內容推進經驗（持 PMA 專案管理證照），結合 User Flow 規劃與 AI 輔助實作，專注打造兼具商業價值與直覺體驗的 Web / App。
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary spring-hover">
+              ［ 查看精選專案 ］
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn-secondary spring-hover">
+              預約面試對談
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Antigravity Profile Visual -->
+        <div class="hero-visual-wrapper reveal-on-scroll delay-2">
+          
+          <!-- Floating Antigravity Tags -->
+          <div class="float-tag float-tag-1">
+            <div class="tag-icon">PM</div>
+            <span>PMA 專案管理認證</span>
+          </div>
+
+          <div class="float-tag float-tag-2">
+            <div class="tag-icon sage">96W</div>
+            <span>單支 96 萬次自然觀看</span>
+          </div>
+
+          <div class="float-tag float-tag-3">
+            <div class="tag-icon gold">AI</div>
+            <span>AI-Powered Prototyping</span>
+          </div>
+
+          <div class="hero-profile-card tilt-card">
+            <div class="profile-img-container">
+              <img 
+                src="https://lh3.googleusercontent.com/d/1atyB0uobgx0J9wSv6-rcOuJ-KIxSEC-9=w1000" 
+                alt="賴沛儒 (Pei-Ju Lai) 形象照片" 
+                class="profile-img"
+                onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80'"
+              >
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       3. Featured Product Projects (精選產品企劃與實作)
+       ========================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <span class="section-tag">Featured Projects</span>
+      <h2 class="section-title">精選產品企劃與實作</h2>
+      <p class="section-desc">從真實使用者痛點出發，結合數據洞察與 AI 工具加速原型開發，將創意敏捷落地。</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: AI Marketing Copilot -->
+        <div class="project-card tilt-card reveal-on-scroll">
+          <div>
+            <div class="project-header">
+              <div>
+                <h3 class="project-title">AI Marketing Copilot</h3>
+                <span class="project-subtitle">社群數據分析與 AI 行動建議平台</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="project-tag">Web App</span>
+              <span class="project-tag">AI Copilot</span>
+              <span class="project-tag">Data Analytics</span>
+              <span class="project-tag">Product Design</span>
+            </div>
+
+            <div class="project-content-block">
+              <div class="insight-box pain-point">
+                <div class="box-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  痛點定義 Pain Point
+                </div>
+                <div class="box-desc">
+                  社群小編與行銷人面臨數據分散於各平台、缺乏即時解讀能力，導致難以迅速調整發文策略與評估成效。
+                </div>
+              </div>
+
+              <div class="insight-box solution">
+                <div class="box-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  解決方案 Solution
+                </div>
+                <div class="box-desc">
+                  將龐雜社群數據轉化為直覺動態圖表，並導入 AI 分析模組，自動產出文案優化指引與具體行動建議。
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span style="font-size: 0.85rem; color: var(--text-muted);">已上線運作產品</span>
+            <a href="https://ai-marketing-piolit.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+              前往產品原型 Dashboard ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Just Groove -->
+        <div class="project-card tilt-card reveal-on-scroll delay-1">
+          <div>
+            <div class="project-header">
+              <div>
+                <h3 class="project-title">Just Groove</h3>
+                <span class="project-subtitle">AI 輔助舞蹈練習 App</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="project-tag">Mobile Web</span>
+              <span class="project-tag">AI Dance Tech</span>
+              <span class="project-tag">UX Flow</span>
+              <span class="project-tag">Specialized Tool</span>
+            </div>
+
+            <div class="project-content-block">
+              <div class="insight-box pain-point">
+                <div class="box-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  痛點定義 Pain Point
+                </div>
+                <div class="box-desc">
+                  舞者在線上看影片自主練舞時，常因缺乏 A-B 段落循環、鏡像翻轉與微幅減速播放等工具而降低練習效率。
+                </div>
+              </div>
+
+              <div class="insight-box solution">
+                <div class="box-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  解決方案 Solution
+                </div>
+                <div class="box-desc">
+                  從真實舞者練習場景出發，規劃支援 A-B Loop 區間重播、一鍵鏡像翻轉與速度調控的專用線上練習工具。
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span style="font-size: 0.85rem; color: var(--text-muted);">行動體驗 Web App</span>
+            <a href="https://dist-peipei1.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+              體驗產品原型 App ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: AI Creator Command Center -->
+        <div class="project-card tilt-card reveal-on-scroll delay-2">
+          <div>
+            <div class="project-header">
+              <div>
+                <h3 class="project-title">AI Creator Command Center</h3>
+                <span class="project-subtitle">創作者指令與工作流中心</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="project-tag">Productivity</span>
+              <span class="project-tag">Prompt Engineering</span>
+              <span class="project-tag">Workflow OS</span>
+            </div>
+
+            <div class="project-content-block">
+              <div class="insight-box pain-point">
+                <div class="box-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  痛點定義 Pain Point
+                </div>
+                <div class="box-desc">
+                  創作者跨 AI 工具（ChatGPT, Midjourney, Claude）協作時，Prompt 散落各處、複製繁瑣，缺乏系統化整理。
+                </div>
+              </div>
+
+              <div class="insight-box solution">
+                <div class="box-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  解決方案 Solution
+                </div>
+                <div class="box-desc">
+                  打造模組化 Prompt 控制台與工作流管理介面，集中收藏優質指令與內容庫，降低跨工具整理成本。
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span style="font-size: 0.85rem; color: var(--text-muted);">創作者工具 OS</span>
+            <a href="https://ai-creator-command-center.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+              進入 Command Center ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: SOLMIÉ 品牌學院 -->
+        <div class="project-card tilt-card reveal-on-scroll delay-3">
+          <div>
+            <div class="project-header">
+              <div>
+                <h3 class="project-title">SOLMIÉ 品牌學院</h3>
+                <span class="project-subtitle">線上線下整合學習平台 (O2O Platform)</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="project-tag">O2O Learning</span>
+              <span class="project-tag">Brand Experience</span>
+              <span class="project-tag">Membership Flow</span>
+            </div>
+
+            <div class="project-content-block">
+              <div class="insight-box pain-point">
+                <div class="box-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  痛點定義 Pain Point
+                </div>
+                <div class="box-desc">
+                  線上學員缺乏實體課堂連動、課表預約程序繁瑣，且缺乏個人的綜合學習進度看板。
+                </div>
+              </div>
+
+              <div class="insight-box solution">
+                <div class="box-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  解決方案 Solution
+                </div>
+                <div class="box-desc">
+                  整合品牌美學形象、線上預約課表、動態學習進度與會員系統，建立一站式高黏著度學習生態圈。
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span style="font-size: 0.85rem; color: var(--text-muted);">全通路學習平台</span>
+            <a href="https://laipei0725-del.github.io/web.test.agent.opendesign2026/dance-creator-os/src/portal/index.html" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+              瀏覽 SOLMIÉ 學院平台 ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       4. Viral Content & Video Showcase (短影音內容創作與流量專區)
+       ========================================================================== -->
+  <section class="section" id="viral-content">
+    <div class="container">
+      <span class="section-tag">Growth & Content Mastery</span>
+      <h2 class="section-title">短影音內容創作與流量專區</h2>
+      <p class="section-desc">結合情境洞察與數據導向腳本，創造高擴散、高完播率的自然爆款短影音。</p>
+
+      <!-- Core Metrics Dashboard -->
+      <div class="metrics-grid">
+        <div class="metric-card reveal-on-scroll" data-value="960000" data-suffix=" 次+">
+          <div class="metric-number">960,000+</div>
+          <div class="metric-label">單支自然觀看次數</div>
+          <div class="metric-sub">玫芸國際《有穿有平安》爆款紀錄</div>
+        </div>
+
+        <div class="metric-card reveal-on-scroll delay-1" data-value="700" data-prefix="+" data-suffix="%">
+          <div class="metric-number">+700%</div>
+          <div class="metric-label">單日流量暴增成長</div>
+          <div class="metric-sub">精準切入時事與生活痛點熱潮</div>
+        </div>
+
+        <div class="metric-card reveal-on-scroll delay-2" data-value="80" data-suffix="%">
+          <div class="metric-number">65% – 80%</div>
+          <div class="metric-label">平均影片完播率</div>
+          <div class="metric-sub">前 3 秒 Hook 鉤子與高緊湊剪輯</div>
+        </div>
+      </div>
+
+      <!-- 9:16 Vertical Video Showcase -->
+      <div class="videos-grid">
+
+        <!-- Video 1 -->
+        <div class="video-card reveal-on-scroll">
+          <div class="phone-mockup-wrapper" data-title="玫芸國際《有穿有平安》" data-desc="96 萬自然觀看 · 時事與生活痛點共鳴企劃">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="玫芸國際 影片預覽" class="phone-mockup-cover">
+            <div class="play-overlay">
+              <span class="video-stat-badge">🔥 96萬次觀看</span>
+              <div class="play-btn-circle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <span style="font-size: 0.8rem; color: #EEE;">點擊播放 / 預覽</span>
+            </div>
+          </div>
+          <div class="video-card-body">
+            <h3 class="video-card-title">玫芸國際《有穿有平安》</h3>
+            <p class="video-card-desc">以日常迷信與拜拜情境切入產品優勢，打造極具生活感與共鳴的病毒式短影音。</p>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card reveal-on-scroll delay-1">
+          <div class="phone-mockup-wrapper" data-title="羽軒服飾爆款穿搭" data-desc="26 萬觀看 · 9,099 次自然分享企劃">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="羽軒服飾 影片預覽" class="phone-mockup-cover">
+            <div class="play-overlay">
+              <span class="video-stat-badge">🚀 26萬觀看 / 9,099分享</span>
+              <div class="play-btn-circle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <span style="font-size: 0.8rem; color: #EEE;">點擊播放 / 預覽</span>
+            </div>
+          </div>
+          <div class="video-card-body">
+            <h3 class="video-card-title">羽軒服飾爆款企劃</h3>
+            <p class="video-card-desc">突破傳統服飾展示，運用痛點顯瘦對比與對拍音樂，誘發創紀錄的 9,099 次自然分享。</p>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card reveal-on-scroll delay-2">
+          <div class="phone-mockup-wrapper" data-title="秋健身《腰痠篇》" data-desc="生活情境切入 · 完播率突破 80%">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="秋健身 影片預覽" class="phone-mockup-cover">
+            <div class="play-overlay">
+              <span class="video-stat-badge">⚡ 80%+ 超高完播率</span>
+              <div class="play-btn-circle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <span style="font-size: 0.8rem; color: #EEE;">點擊播放 / 預覽</span>
+            </div>
+          </div>
+          <div class="video-card-body">
+            <h3 class="video-card-title">秋健身《腰痠篇》</h3>
+            <p class="video-card-desc">針對久坐族群腰痠痛點，前 3 秒即給予解決方案懸念，達成破 80% 的驚人完播表現。</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Video Folder Link CTA -->
+      <div class="video-folder-cta reveal-on-scroll">
+        <a href="https://drive.google.com/drive/folders/1Cp1mPFGWDoOQ0RcS4aXmZfCXoScC1L16?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-secondary spring-hover">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+          </svg>
+          開啟 Google Drive 觀看完整短影音作品集資料夾 ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       5. PM Product Methodology Section
+       ========================================================================== -->
+  <section class="section" id="methodology" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-light);">
+    <div class="container">
+      <span class="section-tag">PM Methodology</span>
+      <h2 class="section-title">產品企劃與推進方法論</h2>
+      <p class="section-desc">結合使用者痛點發現、User Flow 設計、AI 原型速成與數據驗證的推進閉環。</p>
+
+      <div class="methodology-grid">
+        <div class="method-card reveal-on-scroll">
+          <div class="method-step">01</div>
+          <h3 class="method-title">痛點挖掘與敏銳度</h3>
+          <p class="method-desc">深入使用者真實生活情境，精準辨識尚未被滿足的需求與痛點。</p>
+        </div>
+
+        <div class="method-card reveal-on-scroll delay-1">
+          <div class="method-step">02</div>
+          <h3 class="method-title">User Flow & Wireframe</h3>
+          <p class="method-desc">梳理直覺的使用者旅程，繪製清晰 Wireframe 減少溝通迷航。</p>
+        </div>
+
+        <div class="method-card reveal-on-scroll delay-2">
+          <div class="method-step">03</div>
+          <h3 class="method-title">AI 輔助敏捷原型</h3>
+          <p class="method-desc">善用 AI 工具與前端實作成型，快速打樣實體 App / Web Prototype。</p>
+        </div>
+
+        <div class="method-card reveal-on-scroll delay-3">
+          <div class="method-step">04</div>
+          <h3 class="method-title">數據驗證與成長</h3>
+          <p class="method-desc">結合內容流量與用戶行為數據，進行持續性產品迭代優化。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       6. Contact & Hire Me Footer Section (高轉換邀約區)
+       ========================================================================== -->
+  <footer class="footer-hire-section" id="contact">
+    <div class="container">
+      
+      <div class="hire-card-wrapper reveal-on-scroll">
+        <span class="section-tag" style="margin-bottom: 1.5rem;">Let's Create Value Together</span>
+        <h2 class="hire-title">擅長將創意落地以及放大價值</h2>
+        <p class="hire-subtitle">
+          正在尋找兼具產品商業思維、使用者同理心與內容流量推動力的 Junior PM / Growth Marketer 嗎？<br>
+          歡迎透過下方聯絡方式與我連繫，一同打造具備影響力的數位產品！
+        </p>
+
+        <!-- Contact Information Chips -->
+        <div class="contact-info-grid">
+          <a href="mailto:laipei0725@gmail.com?subject=%E3%80%9F%E9%9D%A2%E8%A9%A6%E9%82%80%E8%AB%8B%E3%80%A0%E6%95%B8%E4%BD%8D%E7%94%A2%E5%93%81%E4%企劃%20%C3%97%20%E6%88%90%E9%95%B7%E9%BB%91%E5%AE%A2%20-%20%E8%B3%B4%E6%B2%9B%E5%84%92" class="contact-chip spring-hover" id="emailChip">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            laipei0725@gmail.com
+          </a>
+
+          <a href="tel:0906186228" class="contact-chip spring-hover">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            0906-186-228
+          </a>
+
+          <a href="https://github.com/laipei0725-del" target="_blank" rel="noopener noreferrer" class="contact-chip spring-hover">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub Profile
+          </a>
+        </div>
+
+        <!-- One-Click Interview Booking CTA Button -->
+        <a href="mailto:laipei0725@gmail.com?subject=%E3%80%9F%E9%9D%A2%E8%A9%A6%E9%82%80%E8%AB%8B%E3%80%A0%E6%95%B8%E4%BD%8D%E7%94%A2%E5%93%81%E企劃%20%C3%97%20%E6%88%90%E9%95%B7%E9%BB%91%E5%AE%A2%20-%20%E8%B3%B4%E6%B2%9B%E5%84%92&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E5%80%91%E7%9C%8B%E5%88%B0%E4%BA%86%E6%82%A8%E7%9A%84%E4%BD%9C%E5%93%81%E9%9B%86%EF%BC%8C%E6%83%B3%E8%88%87%E6%82%A8%E9%80%B2%E4%B8%80%E6%AD%A5%E8%81%8A%E8%81%8A%E7%94%A2%E5%93%81%E4%企劃%2F%E6%88%90%E9%95%B7%E8%81%B7%E7%BC%BA%E7%9A%84%E4%BD%9C%E6%A5%AD%EF%BC%81" class="btn-hire-cta spring-hover" id="hireMeCta">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M22 2 11 13"></path>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+          一鍵發送【面試邀請】對談 ↗
+        </a>
+      </div>
+
+      <div class="site-footer-bottom">
+        <p>© 2026 賴沛儒 Pei-Ju Lai. Portfolio Designed with DOD Aesthetic & Antigravity Motion System.</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- 9:16 Video Lightbox Modal -->
+  <div class="lightbox-modal" id="videoLightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close video player">&times;</button>
+      <div id="lightboxContainer" style="width: 100%; height: 100%;"></div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript Files -->
+  <script src="js/main.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/counter.js"></script>
+
+</body>
+</html>
