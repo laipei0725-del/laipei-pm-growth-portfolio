@@ -90,6 +90,7 @@
   /* Typography - Custom Font Family Cascade */
   --font-serif: 'jf-jinxuan', 'Tsuhsianti', 'Noto Serif TC', 'Georgia', serif;
   --font-sans: 'jf-jinxuan', 'Plus Jakarta Sans', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: var(--font-serif);
 
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
