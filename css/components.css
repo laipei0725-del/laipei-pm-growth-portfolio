@@ -1355,3 +1355,461 @@
     bottom: 1.5rem;
   }
 }
+
+/* ==========================================================================
+   Module 1: Editorial Story Section (About Me 「關於沛儒」)
+   ========================================================================== */
+.identity-snapshot-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 24px;
+  padding: 1.6rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.snapshot-img-container {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--border-light);
+}
+
+.snapshot-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.snapshot-name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
+}
+
+.snapshot-title {
+  font-size: 0.825rem;
+  color: var(--accent-sand);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.snapshot-tags-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border-medium);
+}
+
+.snapshot-tag-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.tag-category-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-self: flex-start;
+}
+
+.tag-category-badge.terracotta {
+  background-color: rgba(200, 125, 83, 0.12);
+  color: var(--accent-terracotta);
+}
+
+.tag-category-badge.sage {
+  background-color: rgba(110, 126, 106, 0.12);
+  color: var(--accent-sage);
+}
+
+.tag-category-badge.gold {
+  background-color: rgba(212, 163, 89, 0.14);
+  color: var(--accent-gold);
+}
+
+.tag-category-text {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.snapshot-quick-nav {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.snapshot-nav-btn {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.7rem;
+  border-radius: var(--radius-pill);
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-light);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.snapshot-nav-btn:hover {
+  background-color: var(--accent-terracotta);
+  color: #FFF;
+  border-color: var(--accent-terracotta);
+  transform: translateY(-1px);
+}
+
+/* Editorial Story Right Stream */
+.editorial-main-title {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin-bottom: 1.25rem;
+}
+
+.editorial-blockquote {
+  border-left: 3px solid var(--accent-terracotta);
+  background: rgba(200, 125, 83, 0.05);
+  padding: 1.1rem 1.35rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-family: var(--font-serif);
+  font-size: 0.975rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+  margin-bottom: 1.75rem;
+}
+
+.editorial-chapters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.editorial-chapter-item {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.editorial-chapter-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.chapter-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.chapter-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.editorial-micro-cta {
+  background: linear-gradient(135deg, rgba(200, 125, 83, 0.08) 0%, rgba(110, 126, 106, 0.08) 100%);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.micro-cta-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.btn-micro-cta {
+  background-color: var(--accent-terracotta);
+  color: #FFF;
+  font-size: 0.825rem;
+  font-weight: 700;
+  padding: 0.5rem 1.1rem;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-micro-cta:hover {
+  background-color: var(--accent-terracotta-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: #FFF;
+}
+
+/* ==========================================================================
+   Module 2: Mid-section Transition Banner & Metrics Outcome Styling
+   ========================================================================== */
+.insight-box.outcome {
+  background-color: rgba(110, 126, 106, 0.08);
+  border-left: 3px solid var(--accent-sage);
+}
+
+.insight-box.outcome .box-label {
+  color: var(--accent-sage);
+}
+
+.projects-mid-banner {
+  margin-top: 3rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-pill);
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.btn-banner-cta {
+  background-color: var(--accent-terracotta);
+  color: #FFF;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.45rem 1.2rem;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-fast);
+}
+
+.btn-banner-cta:hover {
+  background-color: var(--accent-terracotta-hover);
+  color: #FFF;
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   Module 3: Collaborator Testimonials
+   ========================================================================== */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.85rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--border-medium);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.testimonial-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill);
+}
+
+.testimonial-tag.terracotta {
+  background-color: rgba(200, 125, 83, 0.1);
+  color: var(--accent-terracotta);
+}
+
+.testimonial-tag.sage {
+  background-color: rgba(110, 126, 106, 0.1);
+  color: var(--accent-sage);
+}
+
+.testimonial-tag.gold {
+  background-color: rgba(212, 163, 89, 0.12);
+  color: var(--accent-gold);
+}
+
+.quote-icon {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--border-medium);
+}
+
+.testimonial-quote {
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.author-avatar-badge {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--accent-terracotta);
+  color: #FFF;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.author-avatar-badge.sage {
+  background-color: var(--accent-sage);
+}
+
+.author-avatar-badge.gold {
+  background-color: var(--accent-gold);
+}
+
+.author-name {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.author-role {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Module 4: Footer CTA Visual Hierarchy Restructuring
+   ========================================================================== */
+.footer-primary-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.btn-resume-primary {
+  background-color: var(--text-primary);
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 2.2rem;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-fast);
+}
+
+.btn-resume-primary:hover {
+  background-color: var(--accent-sand);
+  color: #FFF;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-info-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.contact-info-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.contact-info-item:hover {
+  color: var(--accent-terracotta);
+}
+
+.btn-ghost-cta {
+  background: transparent;
+  border: 1.5px solid var(--accent-terracotta);
+  color: var(--accent-terracotta);
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.925rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+}
+
+.btn-ghost-cta:hover {
+  background-color: var(--accent-terracotta);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(200, 125, 83, 0.25);
+}
+
+@media (max-width: 992px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
