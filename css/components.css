@@ -411,9 +411,19 @@
   border-left: 3px solid var(--accent-terracotta);
 }
 
-.insight-box.solution {
-  background-color: rgba(110, 126, 106, 0.05);
+.insight-box.scope {
+  background-color: rgba(157, 130, 112, 0.07);
+  border-left: 3px solid var(--accent-sand);
+}
+
+.insight-box.execution {
+  background-color: rgba(110, 126, 106, 0.06);
   border-left: 3px solid var(--accent-sage);
+}
+
+.insight-box.impact {
+  background-color: rgba(212, 163, 89, 0.09);
+  border-left: 3px solid var(--accent-gold);
 }
 
 .box-label {
@@ -431,8 +441,16 @@
   color: var(--accent-terracotta);
 }
 
-.insight-box.solution .box-label {
+.insight-box.scope .box-label {
+  color: var(--accent-sand);
+}
+
+.insight-box.execution .box-label {
   color: var(--accent-sage);
+}
+
+.insight-box.impact .box-label {
+  color: var(--accent-gold);
 }
 
 .box-desc {

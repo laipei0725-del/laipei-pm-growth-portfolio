@@ -448,6 +448,31 @@ ul {
   color: #FFFFFF;
 }
 
+.btn-secondary-glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 125, 83, 0.28);
+  color: var(--text-primary);
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.925rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary-glass:hover {
+  background: rgba(200, 125, 83, 0.1);
+  border-color: var(--accent-terracotta);
+  color: var(--accent-terracotta);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
 .btn-secondary {
   background-color: var(--bg-surface);
   color: var(--text-primary);
