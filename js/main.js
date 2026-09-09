@@ -105,3 +105,34 @@ function initCopyHelper() {
     });
   });
 }
+
+/**
+ * Contact Form Submission Handler
+ */
+function handleFormSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('formName')?.value || '';
+  const contact = document.getElementById('formContact')?.value || '';
+  const genderEl = document.querySelector('input[name="gender"]:checked');
+  const gender = genderEl ? genderEl.value : '';
+  const message = document.getElementById('formMessage')?.value || '';
+
+  const toast = document.getElementById('formSuccessToast');
+  if (toast) {
+    toast.style.display = 'flex';
+  }
+
+  const subject = encodeURIComponent(`【作品集諮詢對談】${name} ${gender} 的諮詢聯絡`);
+  const body = encodeURIComponent(
+    `姓名 / 稱呼：${name} (${gender})\n` +
+    `聯絡電話 / Email：${contact}\n` +
+    `諮詢與合作內容：\n${message}\n\n` +
+    `----------------------------------------\n` +
+    `來自 賴沛儒 Pei-Ju Lai 個人作品集網站`
+  );
+
+  setTimeout(() => {
+    window.location.href = `mailto:laipei0725@gmail.com?subject=${subject}&body=${body}`;
+  }, 1200);
+}
+
