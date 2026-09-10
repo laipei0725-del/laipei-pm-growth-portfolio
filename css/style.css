@@ -57,16 +57,20 @@
 }
 
 :root {
-  /* Colors - Warm Earth & Natural Palette */
-  --bg-main: #F8F6F0;
-  --bg-secondary: #F2EFE7;
+  /* Colors - Warm Morandi & Modern Editorial Palette */
+  --bg-main: #F6F4EE;
+  --bg-secondary: #EFECE6;
   --bg-surface: #FFFFFF;
-  --bg-surface-translucent: rgba(255, 255, 255, 0.82);
-  --bg-card: rgba(253, 252, 249, 0.85);
+  --bg-surface-translucent: rgba(255, 255, 255, 0.85);
+  --bg-card: rgba(255, 255, 255, 0.9);
 
-  --text-primary: #2C2B29;
-  --text-secondary: #5E5B55;
+  --text-primary: #141414;
+  --text-secondary: #6B665E;
   --text-muted: #8C8880;
+
+  --accent-cta: #FFE600;
+  --accent-cta-text: #141414;
+  --accent-cta-hover: #E5CF00;
 
   --accent-terracotta: #C87D53;
   --accent-terracotta-hover: #B26B42;
@@ -76,8 +80,8 @@
   --accent-sand-light: #F4EFEA;
   --accent-gold: #D4A359;
 
-  --border-light: #EBE7DF;
-  --border-medium: #D8D2C6;
+  --border-light: #E5E0D6;
+  --border-medium: #D5CFB5;
   --border-focus: #C87D53;
 
   /* Shadows & Dynamic Depth */
