@@ -974,6 +974,33 @@
   transform: scale(1.04);
 }
 
+/* PMA 證照圖片容器：設為橫向比例與防裁切 */
+.cert-image-container {
+  width: 100%;
+  aspect-ratio: 16 / 10;      /* 維持橫式證照比例 */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818; /* 配合深色底色 */
+  border-radius: var(--radius-md);
+}
+
+/* 證照圖片：旋轉90度、自適應縮放並置中 */
+.cert-image-pma {
+  width: auto;
+  height: 65.5%;              /* 65.5% 確保旋轉 -90 度後之視覺高度完美契合容器不被裁切 */
+  max-width: none;
+  transform: rotate(-90deg);   /* 旋轉 -90 度呈正面朝上 */
+  transform-origin: center center;
+  object-fit: contain;        /* 確保姓名與完整證照內容不被裁切 */
+  transition: transform 0.5s ease;
+}
+
+.cert-card:hover .cert-image-pma {
+  transform: rotate(-90deg) scale(1.04);
+}
+
 .cert-content {
   padding-top: 1rem;
   display: flex;
